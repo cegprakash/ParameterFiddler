@@ -1,5 +1,6 @@
 package parameterfiddler;
 
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -108,7 +109,9 @@ class Runner extends Observable implements Runnable {
             if (swap) {
                 args.add("-s");
             }
-
+            args.add("-l");
+            args.add("\"./logs/\"");
+            
             ProcessBuilder pb = new ProcessBuilder(args);
             parameterFiddlerQueue.add(new Date() + ": executing: " + pb.command());
             this.setChanged();
