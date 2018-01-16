@@ -1,5 +1,6 @@
 package parameterfiddler;
 
+
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -95,7 +96,7 @@ public class FiddlerGUI extends javax.swing.JFrame implements Observer {
         jPanel1.add(labelBot);
 
         textboxBot.setColumns(10);
-        textboxBot.setText("./MeanMax.exe");
+        textboxBot.setText("./MeanMaxParameterFiddler.exe");
         jPanel1.add(textboxBot);
 
         jSeparator5.setPreferredSize(new java.awt.Dimension(5, 0));
@@ -128,7 +129,7 @@ public class FiddlerGUI extends javax.swing.JFrame implements Observer {
 
         textboxRuns.setColumns(3);
         textboxRuns.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        textboxRuns.setText("1000");
+        textboxRuns.setText("102");
         jPanel1.add(textboxRuns);
 
         jSeparator4.setPreferredSize(new java.awt.Dimension(5, 0));
@@ -139,7 +140,7 @@ public class FiddlerGUI extends javax.swing.JFrame implements Observer {
 
         textboxThreads.setColumns(3);
         textboxThreads.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        textboxThreads.setText("4");
+        textboxThreads.setText("3");
         jPanel1.add(textboxThreads);
 
         jSeparator7.setPreferredSize(new java.awt.Dimension(10, 0));
@@ -190,7 +191,9 @@ public class FiddlerGUI extends javax.swing.JFrame implements Observer {
 
         tableOpponents.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"./MeanMax.exe", "params.txt"}
+                {"./MeanMaxParameterFiddler.exe", ""},
+                {"./euler100.exe", ""},
+                {"./rank28.exe", ""}
             },
             new String [] {
                 "Bot", "Parameter File"
